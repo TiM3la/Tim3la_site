@@ -1,0 +1,7 @@
+{% extends 'portfolio/base_2.html' %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <h2>--{{ article.date|date:'F jS Y' }}--</h2>
+    {{ article.text }}
+{% endblock %}

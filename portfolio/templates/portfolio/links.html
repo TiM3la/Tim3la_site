@@ -1,0 +1,30 @@
+{% extends 'portfolio/base_2.html' %}
+
+{% block content %}
+{% load static %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/links.css' %}">
+</head>
+
+<body>
+
+<ul class="links-list">
+  {% for link in links %}
+  <li class="list-item">
+    <a href="{{ link.url }}" target="_blank" class="item-link">
+      <img src="{{ link.image.url }}" alt="" class="item-img">
+    </a>
+    <a href="{{ link.url }}" target="_blank" class="item-link">
+      <h1 class="item-title">{{ link.title }}</h1>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+
+
+
+</body>
+
+{% endblock %}

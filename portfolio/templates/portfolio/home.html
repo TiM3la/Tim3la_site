@@ -1,0 +1,29 @@
+{% extends 'portfolio/base_2.html' %}
+
+{% block content %}
+
+        {% load static %}
+<head>
+        <title>Tim3la | главная</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+
+
+<div class="anons">
+  <img src="{% static 'portfolio/anons-img-2.jpg' %}" alt="anons-img-2" class="anons-img">
+  <h1 class="anons-title" id="gallery">всемилосердная. всемогущая. всезнающая</h1>
+</div>
+
+<div class="container">
+  <ul class="container-gallery">
+    {% for project in projects %}
+    <li class="gallery-item" id="">
+      <a href="{% url 'project' project.id %}" target="_blank" class="gallery-item-link">
+        <img src="{{ project.image.url }}" alt="" class="gallery-item-img">
+        <h2 class="gallery-item-title">{{ project.title }}</h2>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

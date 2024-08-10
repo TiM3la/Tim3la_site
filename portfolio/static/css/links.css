@@ -1,0 +1,51 @@
+.links-list {
+    margin-top: 200px;
+
+    margin-right: 305px;
+    margin-left: 305px;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    display: flex;
+    flex-wrap: nowrap;
+
+    min-width: 500px;
+    margin-bottom: 94px;
+}
+
+.item-img {
+    display: inline-block;
+
+    height: 76px;
+    width: 76px;
+
+    margin-right: 9px;
+
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.item-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+
+.item-link {
+    text-decoration: none;
+}
+
+.item-title:hover {
+    color: blueviolet;
+}
+
+.item-link:visited {
+    color: black;
+}

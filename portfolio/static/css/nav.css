@@ -1,0 +1,73 @@
+.nav {
+    padding: 0px 185px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+}
+.empty {
+    margin-bottom: 92px;
+}
+.nav-logo {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+.nav-logo-logo {
+    width: 65px;
+    margin-right: 22px;
+}
+.nav-logo:visited {
+    color: black;
+}
+.nav-logo-title{
+    font-size: 35px;
+    vertical-align: bottom;
+    margin: 0px;
+}
+.nav-logo-link {
+    text-decoration: none;
+}
+
+.nav-list{
+    display: inline-block;
+    align-items: center;
+    padding-left: 0px;
+
+    margin-bottom: 24px;
+
+    font-size: 25px;
+}
+.nav-list-item {
+    display: inline-block;
+}
+.nav-list-item:not(:last-child) {
+    margin-right: 60px;
+}
+.nav-list-item-link {
+    text-decoration: none;
+}
+.nav-list-item-link:visited, .nav-logo-link:visited {
+    color: black;
+}
+
+.nav-list-item-link:hover, .nav-logo-title:hover {
+    color: blueviolet;
+}
+.gallery-item-link {
+    text-decoration: none;
+    color: black;
+}
+.gallery-item-link:visited {
+    color: black;
+}

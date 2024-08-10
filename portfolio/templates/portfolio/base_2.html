@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim3la | главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font_stylesheet.css' %}">
+    <link rel="icon" href="{% static 'portfolio/Tim3la_logo_2.svg' %}" type="image/svg+xml">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="{% url 'home' %}" class="nav-logo-link">
+        <img src="{% static 'portfolio/Tim3la_logo_2.svg' %}" alt="Tim3la-logo" class="nav-logo-logo">
+      </a>
+      <a href="{% url 'home' %}" class="nav-logo-link">
+        <h1 class="nav-logo-title">Tim3la</h1>
+      </a>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <a href="{% url 'home' %}" class="nav-list-item-link">главная</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#gallery" class="nav-list-item-link">галерея</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="{% url 'links' %}" class="nav-list-item-link">ссылки</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="empty"></div>
+
+{% block content  %}{% endblock %}
+
+</body>
+</html>

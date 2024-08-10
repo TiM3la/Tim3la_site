@@ -1,0 +1,21 @@
+{% extends 'portfolio/base_2.html' %}
+
+{% block content %}
+    <h1>Привет, блог!</h1>
+
+    <h2>Яна написала {{ articles.count }} статей</h2>
+
+    {% for article in articles %}
+
+    <a href="{% url 'blog:article' article.id %}"><h1>{{ article.title }}</h1></a>
+
+    {% if article.url %}
+    <a href="{{ article.url }}">Ссылка на статью</a>
+    {% endif %}
+
+    <h2>{{ article.date|date:'d M Y' }}</h2>
+    <p>{{ article.text|truncatechars:100 }}</p>
+    <br>
+    {% endfor %}
+
+{% endblock %}
